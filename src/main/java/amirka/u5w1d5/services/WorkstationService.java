@@ -2,6 +2,7 @@ package amirka.u5w1d5.services;
 
 import amirka.u5w1d5.entities.Workstation;
 import amirka.u5w1d5.entities.WorkstationType;
+import amirka.u5w1d5.exceptions.WorkstationNotFoundEx;
 import amirka.u5w1d5.repositories.WorkstationRepository;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,11 @@ public class WorkstationService {
 
     public void save(Workstation workstation) {
         repository.save(workstation);
+    }
+
+    public Workstation findByUniqueCode(String code) {
+        return repository.findByUniqueCode(code)
+                .orElseThrow(() -> new WorkstationNotFoundEx(code));
     }
 
     public List<Workstation> findAll() {

@@ -50,9 +50,9 @@ public class Booking {
     @Override
     public String toString() {
         return "Booking{" +
-                "user=" + user +
-                ", workstation=" + workstation +
-                ", bookingDate=" + bookingDate +
+                "user= " + user +
+                ", workstation= " + workstation +
+                ", bookingDate= " + bookingDate +
                 '}';
     }
 }

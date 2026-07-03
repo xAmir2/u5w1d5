@@ -62,11 +62,11 @@ public class Workstation {
     @Override
     public String toString() {
         return "Workstation{" +
-                "uniqueCode='" + uniqueCode + '\'' +
-                ", description='" + description + '\'' +
-                ", workstationType=" + workstationType +
-                ", maxPeople=" + maxPeople +
-                ", building=" + building.getName() +
+                "uniqueCode= '" + uniqueCode + '\'' +
+                ", description= '" + description + '\'' +
+                ", workstationType= " + workstationType +
+                ", maxPeople= " + maxPeople +
+                ", building= " + building.getName() +
                 '}';
     }
 }
