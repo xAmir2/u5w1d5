@@ -71,6 +71,11 @@ public class Runner implements CommandLineRunner {
         workstationService.findAll()
                 .forEach(System.out::println);
 
+        // Let's look for a building using id
+
+        System.out.println("Let's find a building using ID");
+        System.out.println(buildingService.findById(1L));
+
         // Let's use search from WorkstationService
 
         System.out.println("Let's search an open space workstation in Rome");
