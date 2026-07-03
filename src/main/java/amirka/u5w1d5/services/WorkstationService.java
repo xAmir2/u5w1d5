@@ -24,6 +24,6 @@ public class WorkstationService {
     }
 
     public List<Workstation> search(WorkstationType workstationType, String city) {
-        return repository.findByTypeAndBuilding_City(workstationType, city);
+        return repository.findByWorkstationTypeAndBuilding_City(workstationType, city);
     }
 }

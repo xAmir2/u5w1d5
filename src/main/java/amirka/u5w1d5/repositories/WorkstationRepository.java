@@ -9,7 +9,8 @@ import java.util.List;
 
 @Repository
 public interface WorkstationRepository extends JpaRepository<Workstation, Long> {
-    List<Workstation> findByTypeAndBuilding_City(
-            WorkstationType type, String city
+    List<Workstation> findByWorkstationTypeAndBuilding_City(
+            WorkstationType workstationType,
+            String city
     );
 }
